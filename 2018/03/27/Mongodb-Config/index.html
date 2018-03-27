@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="####日志文件位置logpath=/data/db/journal/mongodb.log　　（这些都是可以自定义修改的） ####以追加方式写入日志logappend=true ####是否以守护进程方式运行 不开启情况下非正常退出会导致数据库进程直接关闭fork = true ####默认27017port = ">
+<meta name="description" content="日志文件位置logpath=/data/db/journal/mongodb.log　　（这些都是可以自定义修改的） 以追加方式写入日志logappend=true 是否以守护进程方式运行 不开启情况下非正常退出会导致数据库进程直接关闭fork = true 默认27017port = 27017 数据库文件位置dbp">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MongodbConfig">
 <meta property="og:url" content="http://yoursite.com/2018/03/27/Mongodb-Config/index.html">
 <meta property="og:site_name" content="百战炼磨">
-<meta property="og:description" content="####日志文件位置logpath=/data/db/journal/mongodb.log　　（这些都是可以自定义修改的） ####以追加方式写入日志logappend=true ####是否以守护进程方式运行 不开启情况下非正常退出会导致数据库进程直接关闭fork = true ####默认27017port = 27017 ####数据库文件位置dbpath=/data/db ####启用定">
+<meta property="og:description" content="日志文件位置logpath=/data/db/journal/mongodb.log　　（这些都是可以自定义修改的） 以追加方式写入日志logappend=true 是否以守护进程方式运行 不开启情况下非正常退出会导致数据库进程直接关闭fork = true 默认27017port = 27017 数据库文件位置dbpath=/data/db 启用定期记录CPU利用率和 I/O 等待cpu = t">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-27T11:33:12.384Z">
+<meta property="og:updated_time" content="2018-03-27T11:37:04.518Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MongodbConfig">
-<meta name="twitter:description" content="####日志文件位置logpath=/data/db/journal/mongodb.log　　（这些都是可以自定义修改的） ####以追加方式写入日志logappend=true ####是否以守护进程方式运行 不开启情况下非正常退出会导致数据库进程直接关闭fork = true ####默认27017port = 27017 ####数据库文件位置dbpath=/data/db ####启用定">
+<meta name="twitter:description" content="日志文件位置logpath=/data/db/journal/mongodb.log　　（这些都是可以自定义修改的） 以追加方式写入日志logappend=true 是否以守护进程方式运行 不开启情况下非正常退出会导致数据库进程直接关闭fork = true 默认27017port = 27017 数据库文件位置dbpath=/data/db 启用定期记录CPU利用率和 I/O 等待cpu = t">
 
 
 
@@ -261,7 +261,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-27T19:33:12+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-27T19:37:04+08:00">
                 2018-03-27
               </time>
             
@@ -299,38 +299,27 @@
       
 
       
-        <p>####日志文件位置<br>logpath=/data/db/journal/mongodb.log　　（这些都是可以自定义修改的）</p>
-<p>####以追加方式写入日志<br>logappend=true</p>
-<p>####是否以守护进程方式运行 不开启情况下非正常退出会导致数据库进程直接关闭<br>fork = true</p>
-<p>####默认27017<br>port = 27017</p>
-<p>####数据库文件位置<br>dbpath=/data/db</p>
-<p>####启用定期记录CPU利用率和 I/O 等待<br>cpu = true</p>
-<p>####是否以安全认证方式运行，默认是不认证的非安全方式<br>noauth = true<br>auth = tru</p>
-<p>####详细记录输出<br>verbose = tru</p>
-<p>####Inspect all client data for validity on receipt (useful for</p>
-<p>####developing drivers)用于开发驱动程序时验证客户端请求<br>objcheck = tru</p>
-<p>####Enable db quota management</p>
-<p>####启用数据库配额管理<br>quota = true</p>
-<p>####设置oplog记录等级</p>
-<p>####Set oplogging level where n is<br>0=off (default)<br>1=W<br>2=R<br>3=both<br>7=W+some reads<br>diaglog=</p>
-<p>####Diagnostic/debugging option 动态调试项<br>nocursors = tru</p>
-<p>####Ignore query hints 忽略查询提示<br>nohints = true</p>
-<p>####禁用http界面，默认为localhost：28017<br>nohttpinterface = tru</p>
-<p>####关闭服务器端脚本，这将极大的限制功能</p>
-<p>####Turns off server-side scripting.  This will result in greatly limited</p>
-<p>####functionality<br>noscripting = true</p>
-<p>####关闭扫描表，任何查询将会是扫描失败</p>
-<p>####Turns off table scans.  Any query that would do a table scan fails.<br>notablescan = true</p>
-<p>####关闭数据文件预分配</p>
-<p>####Disable data file preallocation.<br>noprealloc = true</p>
-<p>####为新数据库指定.ns文件的大小，单位:MB</p>
-<p>####Specify .ns file size for new databases.<br>nssize </p>
-<p>####Replication Options 复制选项</p>
-<p>####in replicated mongo databases, specify the replica set name here<br>replSet=setname</p>
-<p>####maximum size in megabytes for replication operation log<br>oplogSize=1024</p>
-<p>####path to a key file storing authentication info for connections</p>
-<p>####between replica set members</p>
-<p>####指定存储身份验证信息的密钥文件的路径<br>keyFile=/path/to/keyfile</p>
+        <h4 id="日志文件位置"><a href="#日志文件位置" class="headerlink" title="日志文件位置"></a>日志文件位置</h4><p>logpath=/data/db/journal/mongodb.log　　（这些都是可以自定义修改的）</p>
+<h4 id="以追加方式写入日志"><a href="#以追加方式写入日志" class="headerlink" title="以追加方式写入日志"></a>以追加方式写入日志</h4><p>logappend=true</p>
+<h4 id="是否以守护进程方式运行-不开启情况下非正常退出会导致数据库进程直接关闭"><a href="#是否以守护进程方式运行-不开启情况下非正常退出会导致数据库进程直接关闭" class="headerlink" title="是否以守护进程方式运行 不开启情况下非正常退出会导致数据库进程直接关闭"></a>是否以守护进程方式运行 不开启情况下非正常退出会导致数据库进程直接关闭</h4><p>fork = true</p>
+<h4 id="默认27017"><a href="#默认27017" class="headerlink" title="默认27017"></a>默认27017</h4><p>port = 27017</p>
+<h4 id="数据库文件位置"><a href="#数据库文件位置" class="headerlink" title="数据库文件位置"></a>数据库文件位置</h4><p>dbpath=/data/db</p>
+<h4 id="启用定期记录CPU利用率和-I-O-等待"><a href="#启用定期记录CPU利用率和-I-O-等待" class="headerlink" title="启用定期记录CPU利用率和 I/O 等待"></a>启用定期记录CPU利用率和 I/O 等待</h4><p>cpu = true</p>
+<h4 id="是否以安全认证方式运行，默认是不认证的非安全方式"><a href="#是否以安全认证方式运行，默认是不认证的非安全方式" class="headerlink" title="是否以安全认证方式运行，默认是不认证的非安全方式"></a>是否以安全认证方式运行，默认是不认证的非安全方式</h4><p>noauth = true<br>auth = tru</p>
+<h4 id="详细记录输出"><a href="#详细记录输出" class="headerlink" title="详细记录输出"></a>详细记录输出</h4><p>verbose = tru</p>
+<h4 id="Inspect-all-client-data-for-validity-on-receipt-useful-for"><a href="#Inspect-all-client-data-for-validity-on-receipt-useful-for" class="headerlink" title="Inspect all client data for validity on receipt (useful for"></a>Inspect all client data for validity on receipt (useful for</h4><h4 id="developing-drivers-用于开发驱动程序时验证客户端请求"><a href="#developing-drivers-用于开发驱动程序时验证客户端请求" class="headerlink" title="developing drivers)用于开发驱动程序时验证客户端请求"></a>developing drivers)用于开发驱动程序时验证客户端请求</h4><p>objcheck = tru</p>
+<h4 id="Enable-db-quota-management"><a href="#Enable-db-quota-management" class="headerlink" title="Enable db quota management"></a>Enable db quota management</h4><h4 id="启用数据库配额管理"><a href="#启用数据库配额管理" class="headerlink" title="启用数据库配额管理"></a>启用数据库配额管理</h4><p>quota = true</p>
+<h4 id="设置oplog记录等级"><a href="#设置oplog记录等级" class="headerlink" title="设置oplog记录等级"></a>设置oplog记录等级</h4><h4 id="Set-oplogging-level-where-n-is"><a href="#Set-oplogging-level-where-n-is" class="headerlink" title="Set oplogging level where n is"></a>Set oplogging level where n is</h4><p>0=off (default)<br>1=W<br>2=R<br>3=both<br>7=W+some reads<br>diaglog=</p>
+<h4 id="Diagnostic-debugging-option-动态调试项"><a href="#Diagnostic-debugging-option-动态调试项" class="headerlink" title="Diagnostic/debugging option 动态调试项"></a>Diagnostic/debugging option 动态调试项</h4><p>nocursors = tru</p>
+<h4 id="Ignore-query-hints-忽略查询提示"><a href="#Ignore-query-hints-忽略查询提示" class="headerlink" title="Ignore query hints 忽略查询提示"></a>Ignore query hints 忽略查询提示</h4><p>nohints = true</p>
+<h4 id="禁用http界面，默认为localhost：28017"><a href="#禁用http界面，默认为localhost：28017" class="headerlink" title="禁用http界面，默认为localhost：28017"></a>禁用http界面，默认为localhost：28017</h4><p>nohttpinterface = tru</p>
+<h4 id="关闭服务器端脚本，这将极大的限制功能"><a href="#关闭服务器端脚本，这将极大的限制功能" class="headerlink" title="关闭服务器端脚本，这将极大的限制功能"></a>关闭服务器端脚本，这将极大的限制功能</h4><h4 id="Turns-off-server-side-scripting-This-will-result-in-greatly-limited"><a href="#Turns-off-server-side-scripting-This-will-result-in-greatly-limited" class="headerlink" title="Turns off server-side scripting.  This will result in greatly limited"></a>Turns off server-side scripting.  This will result in greatly limited</h4><h4 id="functionality"><a href="#functionality" class="headerlink" title="functionality"></a>functionality</h4><p>noscripting = true</p>
+<h4 id="关闭扫描表，任何查询将会是扫描失败"><a href="#关闭扫描表，任何查询将会是扫描失败" class="headerlink" title="关闭扫描表，任何查询将会是扫描失败"></a>关闭扫描表，任何查询将会是扫描失败</h4><h4 id="Turns-off-table-scans-Any-query-that-would-do-a-table-scan-fails"><a href="#Turns-off-table-scans-Any-query-that-would-do-a-table-scan-fails" class="headerlink" title="Turns off table scans.  Any query that would do a table scan fails."></a>Turns off table scans.  Any query that would do a table scan fails.</h4><p>notablescan = true</p>
+<h4 id="关闭数据文件预分配"><a href="#关闭数据文件预分配" class="headerlink" title="关闭数据文件预分配"></a>关闭数据文件预分配</h4><h4 id="Disable-data-file-preallocation"><a href="#Disable-data-file-preallocation" class="headerlink" title="Disable data file preallocation."></a>Disable data file preallocation.</h4><p>noprealloc = true</p>
+<h4 id="为新数据库指定-ns文件的大小，单位-MB"><a href="#为新数据库指定-ns文件的大小，单位-MB" class="headerlink" title="为新数据库指定.ns文件的大小，单位:MB"></a>为新数据库指定.ns文件的大小，单位:MB</h4><h4 id="Specify-ns-file-size-for-new-databases"><a href="#Specify-ns-file-size-for-new-databases" class="headerlink" title="Specify .ns file size for new databases."></a>Specify .ns file size for new databases.</h4><p>nssize </p>
+<h4 id="Replication-Options-复制选项"><a href="#Replication-Options-复制选项" class="headerlink" title="Replication Options 复制选项"></a>Replication Options 复制选项</h4><h4 id="in-replicated-mongo-databases-specify-the-replica-set-name-here"><a href="#in-replicated-mongo-databases-specify-the-replica-set-name-here" class="headerlink" title="in replicated mongo databases, specify the replica set name here"></a>in replicated mongo databases, specify the replica set name here</h4><p>replSet=setname</p>
+<h4 id="maximum-size-in-megabytes-for-replication-operation-log"><a href="#maximum-size-in-megabytes-for-replication-operation-log" class="headerlink" title="maximum size in megabytes for replication operation log"></a>maximum size in megabytes for replication operation log</h4><p>oplogSize=1024</p>
+<h4 id="path-to-a-key-file-storing-authentication-info-for-connections"><a href="#path-to-a-key-file-storing-authentication-info-for-connections" class="headerlink" title="path to a key file storing authentication info for connections"></a>path to a key file storing authentication info for connections</h4><h4 id="between-replica-set-members"><a href="#between-replica-set-members" class="headerlink" title="between replica set members"></a>between replica set members</h4><h4 id="指定存储身份验证信息的密钥文件的路径"><a href="#指定存储身份验证信息的密钥文件的路径" class="headerlink" title="指定存储身份验证信息的密钥文件的路径"></a>指定存储身份验证信息的密钥文件的路径</h4><p>keyFile=/path/to/keyfile</p>
 
       
     </div>
@@ -415,8 +404,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -460,6 +458,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#日志文件位置"><span class="nav-number">1.</span> <span class="nav-text">日志文件位置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#以追加方式写入日志"><span class="nav-number">2.</span> <span class="nav-text">以追加方式写入日志</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#是否以守护进程方式运行-不开启情况下非正常退出会导致数据库进程直接关闭"><span class="nav-number">3.</span> <span class="nav-text">是否以守护进程方式运行 不开启情况下非正常退出会导致数据库进程直接关闭</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#默认27017"><span class="nav-number">4.</span> <span class="nav-text">默认27017</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数据库文件位置"><span class="nav-number">5.</span> <span class="nav-text">数据库文件位置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#启用定期记录CPU利用率和-I-O-等待"><span class="nav-number">6.</span> <span class="nav-text">启用定期记录CPU利用率和 I/O 等待</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#是否以安全认证方式运行，默认是不认证的非安全方式"><span class="nav-number">7.</span> <span class="nav-text">是否以安全认证方式运行，默认是不认证的非安全方式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#详细记录输出"><span class="nav-number">8.</span> <span class="nav-text">详细记录输出</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Inspect-all-client-data-for-validity-on-receipt-useful-for"><span class="nav-number">9.</span> <span class="nav-text">Inspect all client data for validity on receipt (useful for</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#developing-drivers-用于开发驱动程序时验证客户端请求"><span class="nav-number">10.</span> <span class="nav-text">developing drivers)用于开发驱动程序时验证客户端请求</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Enable-db-quota-management"><span class="nav-number">11.</span> <span class="nav-text">Enable db quota management</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#启用数据库配额管理"><span class="nav-number">12.</span> <span class="nav-text">启用数据库配额管理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置oplog记录等级"><span class="nav-number">13.</span> <span class="nav-text">设置oplog记录等级</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Set-oplogging-level-where-n-is"><span class="nav-number">14.</span> <span class="nav-text">Set oplogging level where n is</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Diagnostic-debugging-option-动态调试项"><span class="nav-number">15.</span> <span class="nav-text">Diagnostic/debugging option 动态调试项</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Ignore-query-hints-忽略查询提示"><span class="nav-number">16.</span> <span class="nav-text">Ignore query hints 忽略查询提示</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#禁用http界面，默认为localhost：28017"><span class="nav-number">17.</span> <span class="nav-text">禁用http界面，默认为localhost：28017</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关闭服务器端脚本，这将极大的限制功能"><span class="nav-number">18.</span> <span class="nav-text">关闭服务器端脚本，这将极大的限制功能</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Turns-off-server-side-scripting-This-will-result-in-greatly-limited"><span class="nav-number">19.</span> <span class="nav-text">Turns off server-side scripting.  This will result in greatly limited</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#functionality"><span class="nav-number">20.</span> <span class="nav-text">functionality</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关闭扫描表，任何查询将会是扫描失败"><span class="nav-number">21.</span> <span class="nav-text">关闭扫描表，任何查询将会是扫描失败</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Turns-off-table-scans-Any-query-that-would-do-a-table-scan-fails"><span class="nav-number">22.</span> <span class="nav-text">Turns off table scans.  Any query that would do a table scan fails.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关闭数据文件预分配"><span class="nav-number">23.</span> <span class="nav-text">关闭数据文件预分配</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Disable-data-file-preallocation"><span class="nav-number">24.</span> <span class="nav-text">Disable data file preallocation.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#为新数据库指定-ns文件的大小，单位-MB"><span class="nav-number">25.</span> <span class="nav-text">为新数据库指定.ns文件的大小，单位:MB</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Specify-ns-file-size-for-new-databases"><span class="nav-number">26.</span> <span class="nav-text">Specify .ns file size for new databases.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Replication-Options-复制选项"><span class="nav-number">27.</span> <span class="nav-text">Replication Options 复制选项</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#in-replicated-mongo-databases-specify-the-replica-set-name-here"><span class="nav-number">28.</span> <span class="nav-text">in replicated mongo databases, specify the replica set name here</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#maximum-size-in-megabytes-for-replication-operation-log"><span class="nav-number">29.</span> <span class="nav-text">maximum size in megabytes for replication operation log</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#path-to-a-key-file-storing-authentication-info-for-connections"><span class="nav-number">30.</span> <span class="nav-text">path to a key file storing authentication info for connections</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#between-replica-set-members"><span class="nav-number">31.</span> <span class="nav-text">between replica set members</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#指定存储身份验证信息的密钥文件的路径"><span class="nav-number">32.</span> <span class="nav-text">指定存储身份验证信息的密钥文件的路径</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
